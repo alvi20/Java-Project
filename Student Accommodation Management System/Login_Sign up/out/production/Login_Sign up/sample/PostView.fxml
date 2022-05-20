@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="postViewVbox" minWidth="585.0" prefWidth="750.0" spacing="10.0" style="-fx-border-color: orange; -fx-border-radius: 10; -fx-background-color: white; -fx-background-radius: 10;" stylesheets="@CSS/css.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PostViewController">
+   <children>
+      <HBox spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="userPhotoIV" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/login-icon-3042.png" />
+               </image>
+            </ImageView>
+            <VBox spacing="5.0">
+               <children>
+                  <Label fx:id="nameLabel" text="Md Mahadi Hassan">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="time" layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="102.0" text="04/11/2000">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="descriptionLabel" maxWidth="750.0" style="-fx-background-color: #fff; -fx-border-color: blue; -fx-background-radius: 24; -fx-border-radius: 10;" text="Hello everyone, I have a studio apartment, 1bed/1bath, 2bed/2bath apartment for rent.The apartments are completely furnished, internet is free, washer and dryer on site, hydro available, gas stove, fridge, microwave and all necessities." wrapText="true">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <HBox>
+         <children>
+            <Label text="Location :">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="locationLabel" prefHeight="16.0" prefWidth="117.0" text="Dhaka">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Area  :">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="areaLocation" layoutX="71.0" layoutY="10.0" prefHeight="16.0" prefWidth="236.0" text="Bashundhara R/A">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="10.0" text="Bed :">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="bedLabel" layoutX="194.0" layoutY="10.0" prefHeight="16.0" prefWidth="53.0" text="1">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="110.0">
+         <children>
+            <Label text="Gender   :">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="genderLabel" prefHeight="16.0" prefWidth="117.0" text="Male">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Price :">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="priceLabel" layoutX="71.0" layoutY="10.0" prefHeight="16.0" prefWidth="236.0" text="5000 Taka">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" onMouseClicked="#askQuestionHBoxClick" prefWidth="200.0" spacing="5.0" style="-fx-border-color: orange; -fx-border-radius: 5;" styleClass="h_box">
+         <children>
+            <Line endX="100.0" startX="-100.0" stroke="#2600ff" />
+            <Label text="Ask Question" textFill="#2600ff" />
+            <Line endX="100.0" layoutX="361.0" layoutY="20.0" startX="-100.0" stroke="#2600ff" />
+         </children>
+      </HBox>
+      <VBox fx:id="commentVBox" spacing="10.0" style="-fx-border-color: blue; -fx-border-radius: 10;" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

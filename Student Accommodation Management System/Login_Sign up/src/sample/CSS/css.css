@@ -1,0 +1,89 @@
+.root{
+    -fx-background-color: orange;
+}
+
+.scroll_pane{
+    -fx-background-color: transparent;
+}
+
+.scroll_pane .viewport {
+       -fx-background-color: transparent;
+}
+
+.vboxStyleLogin{
+    -fx-effect: dropshadow( two-pass-box , black , 100, 0.0 , 6 , 0);
+}
+
+.radioButton {
+    -fx-effect: dropshadow( two-pass-box , black , 100, 0.0 , 6 , 0);
+}
+
+.noticeBoard {
+    -fx-effect: dropshadow(one-pass-box , black , 120, 0.0 , 4 , 0);
+}
+
+.loginSignupButton {
+    -fx-border-radius: 24px;
+    -fx-background-radius: 24px;
+    -fx-background-color: orange;
+    -fx-border-color: red;
+}
+
+.loginSignupButton:hover{
+    -fx-text-fill : white;
+    -fx-border-color: white;
+}
+
+.choiceBox {
+    -fx-border-radius: 24px;
+    -fx-background-radius: 24px;
+    -fx-background-color: orange;
+}
+
+.passwordField{
+    -fx-background-radius: 24px;
+    -fx-border-radius: 24px;
+    -fx-border-color:  #A866EE;
+}
+.header{
+    -fx-background-color: orange;
+}
+
+.h_box {
+    -fx-background-color : white;
+}
+
+.h_box: hover {
+    -fx-background-color : #EEEEEE;
+}
+
+.changePhotoButton {
+    -fx-background-color : transparent;
+}
+
+.changePhotoButton:hover {
+    -fx-font-size : 14;
+}
+
+.menuButton {
+    -fx-border-radius: 24px;
+    -fx-background-radius: 24px;
+    -fx-background-color: orange;
+    -fx-border-color: red;
+}
+
+.menuButton:hover {
+    -fx-background-color : transparent;
+    -fx-text-fill : white;
+    -fx-border-color: white;
+}
+
+.quickLinkButton {
+    -fx-background-color : white;
+}
+
+.quickLinkButton:hover {
+    -fx-background-color : transparent;
+    -fx-text-fill : white;
+    -fx-border-color: white;
+}
